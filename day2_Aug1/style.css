@@ -1,0 +1,94 @@
+body{
+    background-color: aqua;
+}
+#par2{background-color: antiquewhite;}
+h2.par1{background-color: rgb(229, 229, 39);}
+.bgp{color:brown;}
+/* CSS universal Selector
+
+*{text-align: right;}
+*/
+h2.par1, #par2,h1{
+    text-align:center;
+}
+
+/* ---Combinator Selector---
+
+li a{background-color:coral;}
+div+p{background-color: pink;}
+div >p{color: orange;}
+div~p{color:magenta;}
+*/
+
+/*attribute Selector*/
+a[href*="mailto"]{
+    background-color: aqua;
+}
+
+/*Pseudo Class Selectors*/
+
+.qccLink{
+    background-color: blueviolet;
+    color:aliceblue;
+}
+
+.qcclink:visited{
+    background-color: rgb(223, 255, 127);
+}
+.qcclink:hover{
+    background-color: rgb(21, 91, 67);
+}
+.qcclink:active{
+    background-color: rgb(201, 215, 42);
+}
+.hiddenpar{
+    color: blueviolet;
+    display: none;
+}
+.tooltipDiv:hover .hiddenpar{
+    display:block;
+}
+/*--text and font properties--*/
+.subtitle{font-family: broadway;}
+.intro, .author{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+ 
+/*Text and Font Properties*/
+.shadow{
+    width: 300px;
+    height: 100px;
+    text-align:center;
+    background-color: aqua;
+    box-shadow: -10px 0px 5px orange;
+}
+.hoverMe{
+    background-color: coral; 
+    color: azure;
+    box-shadow: 0px 0px 10px 2px gray;
+    display: inline-block;
+    width:30%;
+    text-align: center
+}
+.hoverMe:hover{
+    box-shadow: none;
+}
+
+/*card*/
+.card{
+    width: 30%;
+    box-shadow: 0px 0px 3px 2px gray, 2px 5 px 3px lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imgcard{width: 100%;}
+.cardInfo{text-align: center;}
+.card:hover{box-shadow: 0px 0px 3px 1px red;}
+
+/* Box Model Properties*/
+
+.box{
+    background-color: aqua;
+    border: 10px orange solid;
+    margin: 2em;
+    padding: 3em;
+}
